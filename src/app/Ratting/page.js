@@ -65,7 +65,7 @@ export default function Ratting() {
             process improvements through.
           </p>
           <div className="flex items-center space-x-4">
-            <img
+            <Image
               src="https://ittech.ditsolution.net/wp-content/uploads/2024/10/software-company-testi-img2.png"
               alt="Marco Jansen"
               className="w-12 h-12 rounded-full"
@@ -102,7 +102,7 @@ export default function Ratting() {
             process improvements through.
           </p>
           <div className="flex items-center space-x-4">
-            <img
+            <Image
               src="https://ittech.ditsolution.net/wp-content/uploads/2024/10/software-company-testi-img3.png"
               alt="Marco Jansen"
               className="w-12 h-12 rounded-full"
@@ -139,7 +139,7 @@ export default function Ratting() {
             process improvements through.
           </p>
           <div className="flex items-center space-x-4">
-            <img
+            <Image
               src="https://ittech.ditsolution.net/wp-content/uploads/2024/10/software-company-testi-img4.png"
               alt="Marco Jansen"
               className="w-12 h-12 rounded-full"

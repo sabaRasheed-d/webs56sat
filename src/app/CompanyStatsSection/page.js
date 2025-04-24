@@ -64,7 +64,7 @@ export default function CompanyStatsSection() {
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 px-4 max-w-6xl mx-auto opacity-50">
           {logos.map((logo, index) => (
-            <img
+            <Image
               key={index}
               src={logo.src}
               alt={logo.alt}
