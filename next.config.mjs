@@ -19,10 +19,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 
-  experimental: {
-    appDir: true,
-  },
-
   images: {
     domains: [
       'ittech.ditsolution.net',
@@ -39,7 +35,6 @@ const nextConfig = {
       'cdn3.vectorstock.com',
     ],
   },
-  plugins: ['@netlify/next'],
 };
 
 export default nextConfig;
