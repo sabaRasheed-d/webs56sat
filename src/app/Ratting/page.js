@@ -2,6 +2,8 @@
 "use client";
 
 import Head from "next/head";
+import Image from "next/image";
+
 
 export default function Ratting() {
   return (
@@ -11,7 +13,7 @@ export default function Ratting() {
       </Head>
       <h2 className="text-center text-sm text-gray-400">Our Testimonials</h2>
       <h1 className="text-center text-3xl font-bold mb-12">
-        What our client's say about us
+        What our client&apos;s say about us
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
         <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-16 shadow-lg relative">

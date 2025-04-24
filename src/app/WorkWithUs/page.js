@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from 'next/image';
 
 export default function WorkWithUs() {
   return (
@@ -22,7 +23,7 @@ export default function WorkWithUs() {
         }}
       >
         <h1 className="text-9xl md:text-9xl font-black tracking-widest text-transparent stroke-text uppercase whitespace-nowrap">
-          Let's Start Talk Work With Us...
+          Let&apos;s Start Talk Work With Us...
         </h1>
       </motion.div>
       <div className="absolute inset-0 flex justify-center items-center z-10">
