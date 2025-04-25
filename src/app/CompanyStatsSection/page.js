@@ -1,10 +1,12 @@
+import Image from 'next/image';
+
 const logos = [
   {
     src: "https://ittech.ditsolution.net/wp-content/uploads/2024/10/software-company-brand3.png",
     alt: "Tech Land",
   },
   {
-    src: "	https://ittech.ditsolution.net/wp-content/uploads/2024/10/software-company-brand1.png",
+    src: "https://ittech.ditsolution.net/wp-content/uploads/2024/10/software-company-brand1.png",
     alt: "Logotype 2",
   },
   {
@@ -20,6 +22,7 @@ const logos = [
     alt: "Startup",
   },
 ];
+
 
 export default function CompanyStatsSection() {
   return (
@@ -63,14 +66,18 @@ export default function CompanyStatsSection() {
           </h2>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 px-4 max-w-6xl mx-auto opacity-50">
-          {logos.map((logo, index) => (
-            <Image
-              key={index}
-              src={logo.src}
-              alt={logo.alt}
-              className="mx-auto h-10"
-            />
-          ))}
+        {logos.map((logo, index) => (
+  <Image
+    key={index}
+    src={logo.src.trim()} // defensive trim
+    alt={logo.alt}
+    width={120}
+    height={40}
+    className="mx-auto h-10 w-auto object-contain"
+  />
+))}
+
+
         </div>
       </section>
     </>

@@ -1,9 +1,7 @@
-
 "use client";
 
 import Head from "next/head";
 import Image from "next/image";
-
 
 export default function Ratting() {
   return (
@@ -16,6 +14,7 @@ export default function Ratting() {
         What our client&apos;s say about us
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        {/* Card 1 */}
         <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-16 shadow-lg relative">
           <div className="flex items-center mb-4 space-x-1 text-yellow-400">
             {[...Array(5)].map((_, i) => (
@@ -28,10 +27,12 @@ export default function Ratting() {
             process improvements through.
           </p>
           <div className="flex items-center space-x-4">
-            <img
+            <Image
               src="https://ittech.ditsolution.net/wp-content/uploads/2024/10/software-company-testi-img1.png"
               alt="Farjana Khatun"
-              className="w-12 h-12 rounded-full"
+              width={48}
+              height={48}
+              className="rounded-full object-cover"
             />
             <div>
               <p className="font-bold">Farjana Khatun</p>
@@ -54,7 +55,7 @@ export default function Ratting() {
           </div>
         </div>
 
-
+        {/* Card 2 */}
         <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-16 shadow-lg relative">
           <div className="flex items-center mb-4 space-x-1 text-yellow-400">
             {[...Array(5)].map((_, i) => (
@@ -70,7 +71,9 @@ export default function Ratting() {
             <Image
               src="https://ittech.ditsolution.net/wp-content/uploads/2024/10/software-company-testi-img2.png"
               alt="Marco Jansen"
-              className="w-12 h-12 rounded-full"
+              width={48}
+              height={48}
+              className="rounded-full object-cover"
             />
             <div>
               <p className="font-bold">Marco Jansen</p>
@@ -92,6 +95,8 @@ export default function Ratting() {
             </svg>
           </div>
         </div>
+
+        {/* Card 3 */}
         <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-16 shadow-lg relative">
           <div className="flex items-center mb-4 space-x-1 text-yellow-400">
             {[...Array(5)].map((_, i) => (
@@ -106,8 +111,10 @@ export default function Ratting() {
           <div className="flex items-center space-x-4">
             <Image
               src="https://ittech.ditsolution.net/wp-content/uploads/2024/10/software-company-testi-img3.png"
-              alt="Marco Jansen"
-              className="w-12 h-12 rounded-full"
+              alt="Virat Kholi"
+              width={48}
+              height={48}
+              className="rounded-full object-cover"
             />
             <div>
               <p className="font-bold">Virat Kholi</p>
@@ -129,6 +136,8 @@ export default function Ratting() {
             </svg>
           </div>
         </div>
+
+        {/* Card 4 */}
         <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-16 shadow-lg relative">
           <div className="flex items-center mb-4 space-x-1 text-yellow-400">
             {[...Array(5)].map((_, i) => (
@@ -143,8 +152,10 @@ export default function Ratting() {
           <div className="flex items-center space-x-4">
             <Image
               src="https://ittech.ditsolution.net/wp-content/uploads/2024/10/software-company-testi-img4.png"
-              alt="Marco Jansen"
-              className="w-12 h-12 rounded-full"
+              alt="MH Hassan"
+              width={48}
+              height={48}
+              className="rounded-full object-cover"
             />
             <div>
               <p className="font-bold">MH Hassan</p>
