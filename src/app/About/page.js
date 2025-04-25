@@ -43,7 +43,7 @@ export default function About() {
         "Authoritatively disintermediate business to optimal web-readiness task vertical service timely human capital",
       date: "August 15, 2024",
 
-      image:
+      Image:
         "https://ittech.ditsolution.net/wp-content/uploads/2025/01/icon1_About-Us.png",
     },
     {
@@ -52,7 +52,7 @@ export default function About() {
         "Authoritatively disintermediate business to optimal web-readiness task vertical service timely human capital",
       date: "August 15, 2024",
 
-      image:
+      Image:
         "https://ittech.ditsolution.net/wp-content/uploads/2025/01/icon2_About-Us.png",
     },
     {
@@ -61,7 +61,7 @@ export default function About() {
         "Authoritatively disintermediate business to optimal web-readiness task vertical service timely human capital",
       date: "August 15, 2024",
 
-      image:
+      Image:
         "https://ittech.ditsolution.net/wp-content/uploads/2025/01/icon3_About-Us.png",
     },
   ];
@@ -220,8 +220,8 @@ export default function About() {
           <div className="grid md:grid-cols-3 gap-10">
             {posts.map((post, index) => (
               <div key={index} className="rounded-xl overflow-hidden shadow-xl">
-                <img
-                  src={post.image}
+                <Image
+                  src={post.Image}
                   alt={post.title}
                   className="w-50 px-18 pt-18 pb-8 h-52 "
                 />
@@ -350,7 +350,7 @@ export default function About() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                   <div className="bg-gradient-to-b from-gray-100 to-gray-300 p-6 rounded-2xl shadow-md text-center">
-                    <img
+                    <Image
                       src="https://ittech.ditsolution.net/wp-content/uploads/2024/10/team.png"
                       alt="Team Member 1"
                       className="w-64 h-64  mx-auto mb-4 object-cover"
@@ -359,7 +359,7 @@ export default function About() {
                     <p className="text-sm text-gray-700">WordPress Developer</p>
                   </div>
                   <div className="bg-gradient-to-b from-gray-100 to-gray-300 p-6 rounded-2xl shadow-md text-center">
-                    <img
+                    <Image
                       src="https://ittech.ditsolution.net/wp-content/uploads/2024/10/team2-1.png"
                       alt="Team Member 2"
                       className="w-64 h-64  mx-auto mb-4 object-cover"
@@ -368,7 +368,7 @@ export default function About() {
                     <p className="text-sm text-gray-700">Pro Designer</p>
                   </div>
                   <div className="bg-gradient-to-b from-gray-100 to-gray-300 p-6 rounded-2xl shadow-md text-center">
-                    <img
+                    <Image
                       src="https://ittech.ditsolution.net/wp-content/uploads/2024/10/team4.png"
                       alt="Team Member 3"
                       className="w-64 h-64  mx-auto mb-4 object-cover"
@@ -400,7 +400,7 @@ export default function About() {
             </button>
           </div>
           <div className="mt-1 flex justify-center gap-4">
-            <img
+            <Image
               src="https://media.licdn.com/dms/image/D5612AQHyPliYKNnClg/article-cover_image-shrink_720_1280/0/1699274024969?e=2147483647&v=beta&t=YNnLJHevDIRdgBZcl2IlTc0fqXEhC50UH90yaRJBkbY"
               alt="Team Member"
               className="w-480 h-120  object-cover"
@@ -412,7 +412,7 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
             <div>
               <div className="text-xl font-bold mb-4 flex items-center gap-2">
-                <img
+                <Image
                   src="https://ittech.ditsolution.net/wp-content/uploads/2024/10/it-tech-logo-3.png"
                   alt="IT-Tech"
                   className="w-28 h-8"

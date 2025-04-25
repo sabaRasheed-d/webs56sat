@@ -32,7 +32,7 @@ export default function CompanyStatsSection() {
           <div>
             <p className="text-sm text-gray-400 mb-2">Company Statistics</p>
             <h2 className="text-4xl font-bold leading-tight mb-4">
-              We've achieved many world <br /> wide awards
+              We&apos;ve achieved many world <br /> wide awards
             </h2>
             <p className="text-gray-400 max-w-md">
               There are many variations of passages of Lorem Ipsum but their

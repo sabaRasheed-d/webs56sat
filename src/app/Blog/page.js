@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 export default function Blog() {
   const posts = [
     {
@@ -8,7 +8,7 @@ export default function Blog() {
         "We’ve been a strategy thought leader for nearly five decades and...",
       date: "August 15, 2024",
       category: "Cyber Security",
-      image:
+      Image:
         "https://ittech.ditsolution.net/wp-content/uploads/2024/08/software-company-blog-img1.jpg",
     },
     {
@@ -17,7 +17,7 @@ export default function Blog() {
         "We’ve been a strategy thought leader for nearly five decades and...",
       date: "August 15, 2024",
       category: "Marketing",
-      image:
+      Image:
         "https://ittech.ditsolution.net/wp-content/uploads/2024/08/software-company-blog-img2.jpg",
     },
     {
@@ -26,7 +26,7 @@ export default function Blog() {
         "We’ve been a strategy thought leader for nearly five decades and...",
       date: "August 15, 2024",
       category: "Software",
-      image:
+      Image:
         "https://ittech.ditsolution.net/wp-content/uploads/2024/08/software-company-blog-img3.jpg",
     },
   ];
@@ -46,14 +46,17 @@ export default function Blog() {
       <div className="grid md:grid-cols-3 gap-10">
         {posts.map((post, index) => (
           <div
-            key={index}
-            className="bg-gradient-to-b from-gray-700 to-gray-800 rounded-xl overflow-hidden shadow-xl"
-          >
-            <img
-              src={post.image}
+          key={index}
+          className="bg-gradient-to-b from-gray-700 to-gray-800 rounded-xl overflow-hidden shadow-xl"
+        >
+          <div className="relative w-full h-52">
+            <Image
+              src={post.Image}
               alt={post.title}
-              className="w-full h-52 object-cover"
+              fill
+              className="object-cover"
             />
+          </div>
 
             <div className="p-6">
               <div className="flex justify-between text-sm text-gray-400 mb-2">
