@@ -34,6 +34,18 @@ const nextConfig = {
       'your-image-host.com',
       'cdn3.vectorstock.com',
     ],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "media.licdn.com",
+        pathname: "/dms/image/**",
+      },
+      {
+        protocol: "https",
+        hostname: "ittech.ditsolution.net",
+        pathname: "/wp-content/uploads/**",
+      },
+    ],
   },
 };
 

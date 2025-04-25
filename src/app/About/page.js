@@ -42,7 +42,6 @@ export default function About() {
       description:
         "Authoritatively disintermediate business to optimal web-readiness task vertical service timely human capital",
       date: "August 15, 2024",
-
       Image:
         "https://ittech.ditsolution.net/wp-content/uploads/2025/01/icon1_About-Us.png",
     },
@@ -51,7 +50,6 @@ export default function About() {
       description:
         "Authoritatively disintermediate business to optimal web-readiness task vertical service timely human capital",
       date: "August 15, 2024",
-
       Image:
         "https://ittech.ditsolution.net/wp-content/uploads/2025/01/icon2_About-Us.png",
     },
@@ -60,7 +58,6 @@ export default function About() {
       description:
         "Authoritatively disintermediate business to optimal web-readiness task vertical service timely human capital",
       date: "August 15, 2024",
-
       Image:
         "https://ittech.ditsolution.net/wp-content/uploads/2025/01/icon3_About-Us.png",
     },
@@ -217,34 +214,24 @@ export default function About() {
           <h1 className="text-center text-4xl font-bold mb-12 mt-0">
             Successful Softwares
           </h1>
-          <div className="grid md:grid-cols-3 gap-10">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-4">
             {posts.map((post, index) => (
-              <div key={index} className="rounded-xl overflow-hidden shadow-xl">
-                <Image
-                  src={post.Image}
-                  alt={post.title}
-                  className="w-50 px-18 pt-18 pb-8 h-52 "
-                />
-
-                <div className="pl-6">
-                  <div className="flex justify-between text-sm text-gray-400 mb-2"></div>
-
-                  <h2 className="text-lg font-bold textblack hover:underline cursor-pointer mb-2 px-3">
-                    {post.title}
-                  </h2>
-                  <p className="text-sm font-bold text-gray-700 mb-4">
-                    {post.description}
-                  </p>
-
-                  <div className="flex justify-between items-center text-sm">
-                    <Link href="/contact">
-                      <button className="group relative inline-flex items-center gap-2 px-6 py-3 rounded-full text-white font-semibold bg-gradient-to-r from-blue-600 to-cyan-500 transition-all duration-300 hover:from-cyan-500 hover:to-blue-600 hover:shadow-lg transform hover:translate-x-1">
-                        WHY CHOOSE US
-                        <FiArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
-                      </button>
-                    </Link>
-                  </div>
+              <div
+                key={index}
+                className="bg-white rounded-xl shadow-md p-6 text-center space-y-4"
+              >
+                <div className="flex justify-center">
+                  <Image
+                    src={post.Image}
+                    alt={post.title}
+                    width={80} // 👈 Required
+                    height={80} // 👈 Required
+                    className="object-contain"
+                  />
                 </div>
+                <h3 className="text-xl font-bold">{post.title}</h3>
+                <p className="text-gray-600 text-sm">{post.description}</p>
+                <p className="text-gray-400 text-xs">{post.date}</p>
               </div>
             ))}
           </div>
@@ -305,26 +292,42 @@ export default function About() {
         </div>
 
         <section className="text-white">
-          <div className="bg-gradient-to-r from-indigo-600 via-blue-600 to-blue-800 py-10 px-6 text-start">
-            <h2 className="text-6xl md:text-2xl font-semibold mt-4">
-              View Our Achievement of Top <br />
-              <span className="font-bold">Technology Milestone’s</span>
-            </h2>
-            <div className="flex flex-col md:flex-row justify-center gap-10 text-center text-white ml-85 mb-6">
-              <div>
-                <h3 className="text-4xl font-extrabold">10K+</h3>
-                <p className="text-3xl text-end">All Completed Works</p>
-              </div>
-              <div>
-                <h3 className="text-4xl font-extrabold">36+</h3>
-                <p className="text-3xl text-en">Expert Members</p>
-              </div>
-              <div>
-                <h3 className="text-4xl font-extrabold">97%</h3>
-                <p className="text-3xl text-en">Satisfaction Rate</p>
+          <div className="bg-gradient-to-r from-indigo-600 via-blue-600 to-blue-800 py-10 px-4 sm:px-6 lg:px-8 text-start">
+            <div className="max-w-7xl mx-auto">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-semibold mt-4 text-white">
+                View Our Achievement of Top <br />
+                <span className="font-bold">Technology Milestone’s</span>
+              </h2>
+
+              <div className="flex flex-col sm:flex-row flex-wrap justify-center sm:justify-between items-center gap-8 text-center text-white mt-10">
+                <div className="w-full sm:w-auto">
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold">
+                    10K+
+                  </h3>
+                  <p className="text-base sm:text-lg md:text-xl">
+                    All Completed Works
+                  </p>
+                </div>
+                <div className="w-full sm:w-auto">
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold">
+                    36+
+                  </h3>
+                  <p className="text-base sm:text-lg md:text-xl">
+                    Expert Members
+                  </p>
+                </div>
+                <div className="w-full sm:w-auto">
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold">
+                    97%
+                  </h3>
+                  <p className="text-base sm:text-lg md:text-xl">
+                    Satisfaction Rate
+                  </p>
+                </div>
               </div>
             </div>
           </div>
+
           <div className="bg-gradient-to-r from-blue-100 via-transparent to-blue-100 text-black pt-16 px-6">
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
               <div className="w-full md:w-2/3">
@@ -353,7 +356,9 @@ export default function About() {
                     <Image
                       src="https://ittech.ditsolution.net/wp-content/uploads/2024/10/team.png"
                       alt="Team Member 1"
-                      className="w-64 h-64  mx-auto mb-4 object-cover"
+                      width={256}
+                      height={256}
+                      className="object-cover w-64 h-64 mx-auto mb-4"
                     />
                     <h3 className="text-xl font-bold">Kamal Raj</h3>
                     <p className="text-sm text-gray-700">WordPress Developer</p>
@@ -362,7 +367,9 @@ export default function About() {
                     <Image
                       src="https://ittech.ditsolution.net/wp-content/uploads/2024/10/team2-1.png"
                       alt="Team Member 2"
-                      className="w-64 h-64  mx-auto mb-4 object-cover"
+                      width={256}
+                      height={256}
+                      className="object-cover w-64 h-64 mx-auto mb-4"
                     />
                     <h3 className="text-xl font-bold">Nur Islam Nur</h3>
                     <p className="text-sm text-gray-700">Pro Designer</p>
@@ -371,7 +378,9 @@ export default function About() {
                     <Image
                       src="https://ittech.ditsolution.net/wp-content/uploads/2024/10/team4.png"
                       alt="Team Member 3"
-                      className="w-64 h-64  mx-auto mb-4 object-cover"
+                      width={256}
+                      height={256}
+                      className="object-cover w-64 h-64 mx-auto mb-4"
                     />
                     <h3 className="text-xl font-bold">Chloe Phoenix</h3>
                     <p className="text-sm text-gray-700">Manager</p>
@@ -403,7 +412,9 @@ export default function About() {
             <Image
               src="https://media.licdn.com/dms/image/D5612AQHyPliYKNnClg/article-cover_image-shrink_720_1280/0/1699274024969?e=2147483647&v=beta&t=YNnLJHevDIRdgBZcl2IlTc0fqXEhC50UH90yaRJBkbY"
               alt="Team Member"
-              className="w-480 h-120  object-cover"
+              width={720}
+              height={405}
+              className="w-full h-auto object-cover rounded-lg"
             />
           </div>
         </section>
@@ -415,7 +426,9 @@ export default function About() {
                 <Image
                   src="https://ittech.ditsolution.net/wp-content/uploads/2024/10/it-tech-logo-3.png"
                   alt="IT-Tech"
-                  className="w-28 h-8"
+                  width={200} // Adjust based on your design
+                  height={60}
+                  className="object-contain"
                 />
               </div>
               <p className="text-sm leading-relaxed text-gray-300 mb-6">
